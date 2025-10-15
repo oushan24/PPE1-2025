@@ -1,7 +1,23 @@
 # Journal de bord du projet encadré
+
 ## Devoir 1
+
 J'ai créé un nouveau répertoire sur GitHub, j'ai fait une copie locale sur mon ordi, puis sur le site j'ai créé un nouveau fichier 'journal.md' et avec une commande git pull j'ai mis à jour ma copie locale. Avec la commande écho >> journal.md, j'ai ajouté ce message indiquant ce que j'avait fait. Avec les commandes add journal.md, git commit -m Modifications de journal. et git push j'ai envoyé mes modifications vers la version du journal en ligne. Comme je suis sur MacOS, j'ai crée aussi le dossier .gitignore avec _DS.STORE comme description. J’ai creé le tag gitinto avec la commande git tag -a -m version fini intro git gitinto et puis le pousser vers GitHub avec git push origin gitinto.
 Devoir fini.
 
-## Devoir 2
-Pendant le cours nous avons fait l’exercice 1 des scripts bash, je l’ai mis sur mon git. Après j’ai commencé à faire les exercices suivantes, mais pour le moment je ne comprends pas vraiment ce que je dois faire. J’ai réussi à faire un script qui indique le nombre de personnes, organisations et lieux dans les fichiers de 2016, mais je n’arrive pas à l’appliquer à  d’autres années en même temps. Je vais voir ce que j’ai manqué pendant les corrections le cours suivant.
+## Devoir 2 (pour 15/10)
+
+Pendant le cours nous avons fait l’exercice 1 des scripts bash, je l’ai mis sur mon git. Après j’ai commencé à faire les exercices suivantes, mais pour le moment je ne comprends pas vraiment ce que je dois faire. J’ai réussi à faire un script qui indique le nombre de personnes, organisations et lieux dans les fichiers de 2016, mais je n’arrive pas à l’appliquer à  d’autres années en même temps. 
+
+Mon script actuel est comme ça :
+#!/bin/zsh
+
+echo "argument donné : $1"
+
+CHEMIN=$1
+
+cat "$CHEMIN/2016/"* | grep Location | wc -l
+cat "$CHEMIN/2016/"* | grep Person | wc -l
+cat "$CHEMIN/2016/"* | grep Organisation | wc -l
+
+Je vais voir ce que j’ai manqué pendant les corrections le cours suivant.
