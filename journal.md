@@ -10,6 +10,7 @@ Devoir fini.
 Pendant le cours nous avons fait l’exercice 1 des scripts bash, je l’ai mis sur mon git. Après j’ai commencé à faire les exercices suivantes, mais pour le moment je ne comprends pas vraiment ce que je dois faire. J’ai réussi à faire un script qui indique le nombre de personnes, organisations et lieux dans les fichiers de 2016, mais je n’arrive pas à l’appliquer à  d’autres années en même temps. 
 
 Mon script actuel est comme ça :
+
 #!/bin/zsh
 
 echo "argument donné : $1"
@@ -17,7 +18,9 @@ echo "argument donné : $1"
 CHEMIN=$1
 
 cat "$CHEMIN/2016/"* | grep Location | wc -l
+
 cat "$CHEMIN/2016/"* | grep Person | wc -l
+
 cat "$CHEMIN/2016/"* | grep Organisation | wc -l
 
 Je vais voir ce que j’ai manqué pendant les corrections le cours suivant.
