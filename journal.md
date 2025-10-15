@@ -23,4 +23,4 @@ cat "$CHEMIN/2016/"* | grep Person | wc -l
 
 cat "$CHEMIN/2016/"* | grep Organisation | wc -l
 
-Je vais voir ce que j’ai manqué pendant les corrections le cours suivant.
+C'est pareil à ce qu'on fait ensemble pendant le cours, mais je ne peux pas utiliser ce script pour faire les exercices 2.b et 3. Je vais voir ce que j’ai manqué pendant les corrections le cours suivant.
