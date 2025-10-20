@@ -24,7 +24,7 @@ cat "$CHEMIN/2016/"* | grep Person | wc -l
 cat "$CHEMIN/2016/"* | grep Organisation | wc -l
 
 C'est pareil à ce qu'on fait ensemble pendant le cours, mais je ne peux pas utiliser ce script pour faire les exercices 2.b et 3. Je vais voir ce que j’ai manqué pendant les corrections le cours suivant.
-## Devoir #3
+## Devoir 3
 Pendant le cours le 14.10 nous avons fait les scripts pour les exercices 2-3 de scripts bash. 
 Nous avons appris à utiliser plusieurs arguments dans la commande et à faire appel à un script au sein de l’autre. J’ai aussi appris que sur mon ordi je peux “drag and drop” le répertoire ou le fichier nécessaire dans mon terminal pour compter son chemin ce qui est assez utile.
 Nous avons aussi adapter notre premier script comptes.sh pour qu’il utilise une boucle à l’aide de “for … in”.
