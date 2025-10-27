@@ -35,3 +35,25 @@ Nous avons aussi adapter notre premier script comptes.sh pour qu’il utilise un
 
 ### Exercice 4
 Le script de cet exercice indique si les lignes dans le fichier indiqué dans l’argument de commande sont des liens valides ou pas. Il parcourt chaque ligne du fichier, il vérifie si la ligne contient "https" ce qui est indicateur d'un lien et enfin il affiche le nombre de liens valides (oks, avec "https") et liens douteuses (noks, sans "https").
+## Devoir 3
+Reponses aux questions diapo:
+1. les arguments qu’on utilise avec cat ne modifient pas le résultat final du script
+2. il faut ajouter un argument file= et indiquer le path vers le fichier avec les urls lors de l’exécution du script
+3. il faut ajouter une variable num=1 et l’indiquer avant le premier tab 	
+
+Le script après l’exo 1 était comme ça:
+
+file=
+num=1
+
+while read -r line;
+do
+    echo t;
+    num=1
+done < ;
+
+Quelques problèmes que j’ai eu :
+- l’argument (echo) -e n’est pas nécessaire sur ma machine, si je le mets, ça s’affiche -e dans le tableau
+- j’ai deux sites où le script n’arrive pas à compter le nombre de mots et je ne comprends pas pourquoi
+- le script ne trouve pas les encodages des pages et ce que j’ai vu en ligne pour le corriger est trop compliqué pour moi pour le moment
+- je peux pas accéder au site roboty.magistry pour les raisons de sécurité et je crois que c’est aussi la raison des 0 dans la ligne de ce site dans le tableau
