@@ -58,5 +58,20 @@ done < "${file}";
 Quelques problèmes que j’ai eus :
 - l’argument (echo) -e n’est pas nécessaire sur ma machine, si je le mets, ça s’affiche -e dans le tableau
 - j’ai deux sites où le script n’arrive pas à compter le nombre de mots et je ne comprends pas pourquoi
-- - je nepeux pas accéder au site roboty.magistry pour les raisons de sécurité et je crois que c’est aussi la raison des 0 dans la ligne de ce site dans le tableau
+- je ne peux pas accéder au site roboty.magistry pour les raisons de sécurité et je crois que c’est aussi la raison des 0 dans la ligne de ce site dans le tableau
 - le script ne trouve pas les encodages des pages et ce que j’ai vu en ligne pour le corriger est trop compliqué pour moi pour le moment
+
+## Devoir 5
+
+J'ai réussi à résoudre le problème avec les encodages et maintenant ils s'affichent pour presque chaque ligne. J'ai dû utiliser une commande plus détaillée qu'avant, pareille à celle qu'on a vue pendant le cours.
+
+Avant, la commande était comme ça :  
+encodage=$(echo "$content" | grep -i "charset=" | head -n 1)
+Et maintenant elle est comme ça : 
+encodage=$(echo "$content" | grep -i "charset=" | head -n1 | grep -E -o "charset=.*" | cut -d= -f2 |  tr -d '>"')
+
+J'ai aussi modifié le script pour ne pas utiliser les chemins exacts et, à la place, utiliser les arguments, comme on a fait aussi pendant le cours.
+
+J'ai tout commité avec un tag miniprojet-1-revu.
+
+Pour le devoir d'HTML, j'ai réussi à ajouter les commandes HTML dans mon script corrigé. J'ai tout fait avec la commande echo, ce qui me paraît assez long, mais pour le moment je ne connais pas d'autres variantes. J'espère qu'on va le voir pendant le prochain cours.
