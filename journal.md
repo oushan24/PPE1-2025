@@ -75,7 +75,9 @@ J'ai aussi modifié le script pour ne pas utiliser les chemins exacts et, à la 
 J'ai tout commité avec un tag miniprojet-1-revu.
 
 Pour le devoir d'HTML, j'ai réussi à ajouter les commandes HTML dans mon script corrigé. J'ai tout fait avec la commande echo, ce qui me paraît assez long, mais pour le moment je ne connais pas d'autres variantes. J'espère qu'on va le voir pendant le prochain cours.
+
 ## Devoir final du mini projet
 
 J’ai tout fait d’abord sur mon repertoire git-along parce que j’ai pas bien compris le consigne, mais j’au réussi à tout transférer vers mon repertoire PPE1. J’ai du modifié la structure car dans git-along tout était en root alors que dans PPE1 index.html est en root et le reste dans le miniprojet/
+
 J’ai toujours un problème avec les 3 derniers URLs qui me donnent une erreur 429 et 74 mots pour chaque site. J’ai regardé que ça peut être un problème de securité de la part du site qui permet pas à lynx de parcourir la page entièrement, mais je ne sais pas comment le resoudre.
